@@ -1,0 +1,15 @@
+ip domain name junior14.wsr
+service password-encryption
+username jun14 privilege 15 secret P@ssw0rd
+enable password wsr
+line vty 0 15
+transport input ssh
+login local
+exit
+crypto key generate rsa
+y
+1024
+ip ssh version 2
+line console 0
+login local
+exit
