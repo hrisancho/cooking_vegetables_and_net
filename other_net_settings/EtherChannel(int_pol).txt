@@ -1,0 +1,28 @@
+//Статическое агрегирование 
+
+int rang <нужные нам интерфейсы>
+channel-group <выбираем группу от 1-6> mode <выбираем статус>
+
+Теперь у нас есть логический интерфейс который обединяет несколько физических.
+int port-channel <выбирайте группу которую указали выше>
+
+Пример:
+int rang fa0/1-4
+channel-group 1 mode on
+int port-channel 1 
+
+//Динамическое агрегирование (с L3 коммутатором)
+
+int rang <нужные нам интерфейсы>
+channel-protocol <выбираем протокол передачи к примеру lacp>
+channel-group <выбираем группу от 1-6> mode <выбираем статус active>
+
+Пример:
+int rang fa0/1-2
+channel-protocol lacp
+channel-group 1 mode active
+
+int rang fa0/3-4
+channel-protocol lacp
+channel-group 2 mode active
+
