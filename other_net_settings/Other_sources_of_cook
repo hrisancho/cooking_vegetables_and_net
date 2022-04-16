@@ -19,5 +19,12 @@ http://blog.evgenybelkin.ru/2011/07/ospfv3-ipv6.html?m=1
 # Иерархические сети со своей зоной ответственности
 http://blog.evgenybelkin.ru/2011/07/ospf-stub-totally-stub-nssa-totally.html?m=1
 
-# Поваренная книга сисадмина
+# Поваренная книга сисадмина (самое главное)
 http://blog.evgenybelkin.ru
+
+# Дополнительные протоколы для изучения
+# BGP (ipv4/ipv6)
+# CCNA (ipv4/ipv6)
+# RIP (ipv4/ipv6)
+# DHCP (ipv6)
+# GRE tunnel (ipv4/ipv6)
